@@ -23,8 +23,9 @@ function Api() {
          {BookData.map(book=>(
 
             <div key={book.id} id="book-items">
-                <img src={book.imageLinks.thumbnail} style={{height:'250px', width:'150px' , borderRadius:'5px'}}/>
+                
                 <h4>  <b>Topic : </b> {book.title}</h4>
+                <img src={book.imageLinks.thumbnail} style={{height:'250px', width:'150px' , borderRadius:'5px'}}/>
 
                 <div id="subtitle">
 
