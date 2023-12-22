@@ -24,18 +24,20 @@ function Api() {
 
             <div key={book.id} id="book-items">
                 <img src={book.imageLinks.thumbnail} style={{height:'250px', width:'150px' , borderRadius:'5px'}}/>
-                <h2>{book.title}</h2>
+                <h4>  <b>Topic : </b> {book.title}</h4>
 
                 <div id="subtitle">
-                <h4>{book.subtitle}</h4>
+
+                <h5>{(book.subtitle? book.subtitle : null)}
+                </h5>
                 </div>
 
                 <div id="author">
-                <p>{(book.authors)}</p> 
+                <p> <b>Author : </b> {book.authors}</p> 
                 </div>
 
-                <div id="">
-                <p id="star">{(book.description)}</p> 
+                <div>
+                <p>  <b>Description : </b><br/> {book.description}</p> 
                 </div>
                 <hr/>
             </div>
